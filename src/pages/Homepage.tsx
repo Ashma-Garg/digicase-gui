@@ -5,6 +5,7 @@ import { useContext, useEffect } from "react";
 import { AppContext } from "../context/app";
 import { ContextProps } from "../context/interface";
 import { DigiCareTitle } from "../modules/homepage/title/title";
+import { DigiCareDrawer } from "../modules/homepage/drawer/Drawer";
 
 export const Homepage = () => {
   const { navigationAsPerSignedStatus } = useContext(
@@ -17,7 +18,8 @@ export const Homepage = () => {
 
   return (
     <Grid className="homepage-background">
-      <DigiCareTitle />
+      {/* <DigiCareTitle /> */}
+      <DigiCareDrawer />
     </Grid>
   );
 };

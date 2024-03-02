@@ -39,5 +39,15 @@
       "profile": "profile"
     }
   },
+  "drawerPatient": {
+    "patientImage": "https://res.cloudinary.com/dqdpwdoxs/image/upload/v1705202195/cld-sample-3.jpg",
+    "patientName": "Patient1",
+    "pageTitle": "Dashboard",
+    "drwalerLink": {
+      "home": "Home",
+      "contact": "Contact Us",
+      "about": "About Us"
+    }
+  },
   "date": "Today is {{date, DATE_HUGE}}"
 }
