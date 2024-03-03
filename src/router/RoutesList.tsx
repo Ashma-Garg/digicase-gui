@@ -1,3 +1,4 @@
+import HistoryPage from "../pages/HistoryPage"
 import { Homepage } from "../pages/Homepage"
 
 export const routesName = {
@@ -10,6 +11,7 @@ export const routesName = {
   profile: '/profile',
   notify: '/notifications',
   settings: '/settings',
+  history: '/history',
 }
 
 export const RoutesList = [
@@ -20,4 +22,12 @@ export const RoutesList = [
     renderHelperComponents: false,
     component: <Homepage />,
   },
+  {
+    name: 'hamburger_links.history',
+    link: routesName.history,
+    id: 'history',
+    renderHelperComponents: false,
+    component: <HistoryPage />,
+  },
+  
 ]
