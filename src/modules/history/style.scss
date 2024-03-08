@@ -15,3 +15,17 @@
     margin-right: 30%;
   flex: 1;
 }
+
+.history-data-button {
+  margin-top: 20px;
+  background-color: white;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1.5px;
+  padding: 1.2%;
+  cursor: pointer;
+}
+
+.history-data-button:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.159);
+}

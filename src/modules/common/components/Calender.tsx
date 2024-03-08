@@ -4,12 +4,18 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 
-export default function BasicDateTimePicker() {
+interface BasicDateTimePickerProps {
+  onDateTimeChange: (dateTime: Date | null) => void;
+}
+
+const BasicDateTimePicker: React.FC<BasicDateTimePickerProps> = ({ onDateTimeChange }) => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={['DateTimePicker']}>
-        <DateTimePicker label="Select a Date and Time" />
+        <DateTimePicker label="Select a Date and Time" onChange={onDateTimeChange} />
       </DemoContainer>
     </LocalizationProvider>
   );
-}
+};
+
+export default BasicDateTimePicker;
