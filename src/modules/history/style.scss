@@ -1,10 +1,17 @@
-.history-record-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    max-width: max-content;
+// style.scss
+
+.history-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.history-record-text-title {
-    font-weight: 700 !important;
+.history-data {
+  flex: 1;
+//   padding-right: 20px;  // Adjust the spacing as needed
+}
+
+.datetime-picker {
+    margin-left: 30%;
+    margin-right: 30%;
+  flex: 1;
 }
