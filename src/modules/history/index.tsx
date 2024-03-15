@@ -28,13 +28,8 @@ export const History = () => {
     if (selectedDateTime) {
       // Use the selectedDateTime variable to fetch data from the backend
       try {
-        console.log(selectedDateTime.toISOString());
         const response = await fetch(`your-backend-api-endpoint?timestamp=${selectedDateTime.toISOString()}`);
         const data = await response.json();
-        // Handle the fetched data as needed
-        console.log(data);
-      } catch (error) {
-        console.error('Error fetching data from the backend:', error);
       }
     }
   };
