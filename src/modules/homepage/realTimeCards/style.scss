@@ -24,6 +24,11 @@
     background-color: $realTimeCardColor !important;
 }
 
+.real-time-card-grid:hover {
+    box-shadow: $hoverBoxShadow;
+    transition: 0.5s ease-in-out;
+}
+
 .real-time-card-action {
     display: flex;
     justify-content: end;

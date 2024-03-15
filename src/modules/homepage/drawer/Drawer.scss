@@ -16,6 +16,12 @@
     color: $lightgrey;
 }
 
+.navbar-router-text:hover{
+    color: $white;
+    margin-left: 2px;
+    transition: 0.4s ease-in-out;
+}
+
 .avatar-position {
     margin-left: auto;
 }

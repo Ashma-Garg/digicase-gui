@@ -8,3 +8,8 @@
   background-color: $navbarTitleBackgroundColor;
   cursor: pointer;
 }
+
+.digicare-nav-title:hover {
+  color: $hovernavbarTitleColor;
+  transition: 0.5s ease-in-out;
+}
